@@ -1,0 +1,157 @@
+.secondSidebar{
+    margin: 30px 50px 10px 0px ;
+}
+.recetnUpdateTitle{
+    text-shadow: 2px 2px 8px gray;
+    margin: 5px;
+    margin-top: 15px;
+}
+.recetnUpdateContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+    background-color: #ffffff17;
+    box-shadow:0 2rem 3rem rgb(132, 139,200 , 0.18) ;
+    border-radius: 30px;
+}
+.recetnUpdateContainer ul li{
+    margin: 8px 5px;
+}
+.recetnUpdateContainer ul li div , .userProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.text{
+    font-size: 12px;
+}
+.recetnUpdateContainer ul li div p span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.salesAnalysis{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+}
+.salesAnalysisTitle{
+    margin: 15px 0;
+    text-shadow: 2px 2px 8px gray;
+}
+.analysisBox{
+    background-color: #ffffff17;
+    box-shadow:0 2rem 3rem rgb(132, 139,200 , 0.18) ;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.analysisBox div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.positive{
+    color: #41f1b6;
+}
+.analysisBox small{
+    margin-left: 70px;
+}
+.iconDanger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7782;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+}
+.iconPrimery{
+    background-color: #7380ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+}
+.iconSuccess{
+   background-color:#41f1b6 ; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   color: #fff;
+}
+.negative{
+    color: #ff7782;
+}
+.addProduct{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px dashed #7380ec ;
+    border-radius: 20px;
+    color: #7380ec;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.addProduct:hover{
+    background-color: #dfe2ff;
+}
+.userProfile{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.userProfile h3 span{
+    font-size: 12px;
+    font-weight: 100;
+}
+.userProfile h3{
+    line-height: 0.8;
+}
+.userProfile img{
+    margin-left: 15px;
+}
+@media screen and (max-width: 1500px) { 
+    .secondSidebar{
+        width: 80%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .salesAnalysisParent{
+        margin: 20px 0;
+        width: 48%;
+    }
+}
+@media screen and (max-width: 500px) { 
+    .secondSidebar{
+        width: 95%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .salesAnalysisParent{
+        margin: 20px 0;
+        width: 100%;
+    }
+}

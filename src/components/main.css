@@ -1,0 +1,227 @@
+main{
+    margin: 2.5rem;
+}
+.title{
+    text-shadow: 2px 2px 8px gray;
+    margin-bottom: 8px;
+}
+.dateInput{
+    width: 180px;
+    border: none;
+    outline: none;
+    bottom: 0;
+    background-color: #ebebeb13;
+    padding: 5px 8px;
+    cursor: grab;
+    border-radius: 5px ;
+    margin-bottom: 20px;
+}
+.insighst{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap :1.5rem ;
+}
+.boxDetail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff17;
+    box-shadow:0 2rem 3rem rgb(132, 139,200 , 0.18) ;
+    border-radius: 30px;
+    width: 340px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.boxDetail:hover{
+    background-color: #c4c9fc;
+}
+.boxDetail:nth-child(2):hover{
+    background-color: #f3c5c8;
+}
+.boxDetail:nth-child(3):hover{
+    background-color: #b4f5df;
+}
+.boxDetail .content span{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #7380ec;
+    font-size: 2rem;
+    color: #fff;
+}
+.boxDetail .content span.danger{
+    background-color: #ff7782;
+}
+.boxDetail .content span.success{
+    background-color: #41f1b6;
+}
+.content{
+    padding: 0 10px;
+}
+.content h4{
+    margin: 5px 0;
+}
+.content h2{
+    margin-bottom: 20px;
+}
+.boxDetail div svg{
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+}
+.boxDetail div svg circle{
+    width: 7rem;
+    height: 7rem;
+    fill: none;
+    stroke-width: 10;
+    stroke: #7380ec;
+    transform: translate(5px , 5px);
+    stroke-dasharray: 226;
+    stroke-dashoffset: calc(226 - (226 * 81) / 100);
+}
+#root > div > main > div > div:nth-child(2) > div.progres > svg > circle{
+    width: 7rem;
+    height: 7rem;
+    fill: none;
+    stroke-width: 10;
+    stroke: #ff7782;
+    transform: translate(5px , 5px);
+    stroke-dasharray: 226;
+    stroke-dashoffset: calc(226 - (226 * 60) / 100);
+}
+#root > div > main > div > div:nth-child(3) > div.progres > svg > circle{
+    width: 7rem;
+    height: 7rem;
+    fill: none;
+    stroke-width: 10;
+    stroke: #41f1b6;
+    transform: translate(5px , 5px);
+    stroke-dasharray: 226;
+    stroke-dashoffset: calc(226 - (226 * 91) / 100);
+}
+.progres{
+    position: relative;
+}
+.boxDetail .progres span{
+    position: absolute;
+    top: 32%;
+    left: 33%;
+    color: #363949 ;
+}
+
+/* recent rder table */
+.recentOrderTitle{
+    text-shadow: 2px 2px 8px gray;
+    margin-top: 20px;
+}
+.recentOrder{
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #ffffff17;
+    box-shadow:0 2rem 3rem rgb(132, 139,200 , 0.18) ;
+    width: 1060px;
+    border-radius: 30px;
+}
+.tableRow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.tableColumn , .tableHeader{
+    width: 200px;
+    text-align: center;
+}
+.due{
+    color: #ffbb55;
+}
+.paid{
+    color: #41f1b6;
+}
+.delivered{
+    color: #7380ec;
+}
+.declined{
+    color: #ff7782;
+}
+.pending{
+    color: #ffbb55;
+}
+.details{
+    color: #7380ec;
+    cursor: pointer;
+}
+@media screen and (max-width: 1770px) {
+    main{
+        width: 80%;
+    }    
+}
+@media screen and (max-width: 1500px) {
+    .container{
+        flex-direction: column; 
+        justify-content: center;   
+    }
+    main{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .recentOrder{
+        margin: 10px;
+        width: 100%;
+    }
+    .insighst{
+        width: 100%;
+    }
+    .insighst .boxDetail{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .container{
+        flex-direction: column; 
+        justify-content: center;   
+    }
+    main{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .recentOrder{
+        width: 100%;
+        padding: 0;
+    }
+    .recentOrder .tableColumn{
+        width: 100%;
+    }
+    .recentOrder .tableHeader{
+        width: 100%;
+    }
+    .insighst{
+        width: 100%;
+    }
+    .insighst .boxDetail{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .insighst{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px) {
+    main{
+        width: 95%;
+        margin:5px;
+    }
+    .recentOrder{
+        margin: 0;
+    }
+    h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+}

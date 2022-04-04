@@ -1,0 +1,124 @@
+aside{
+    height: 100vh;
+    width: 260px;
+    padding-top: 25px;
+    margin-left: 20px;
+    display: inline-block;
+    z-index: 1;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.close{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.imageLogo{
+    width: 3rem;
+}
+.logo span{
+    color: #ffbb55;
+}
+.sidebarItems{
+    width: 300px;
+    position: relative;
+    top: .5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.sidebarItems ul{
+    position: relative;
+    height: 85vh;
+}
+.item{
+    margin: 1rem 0 ;
+    height: 3.6rem;
+    transition: all 0.3s linear;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 180px;
+}
+.item:hover{
+    margin-left: 10px;
+}
+.item a{
+    display: flex;
+    color: #7d8da1;
+    font-weight: 100;
+    align-items: center;
+}
+.item a span{
+    margin-right: 10px;
+}
+.active{
+    background-color: #ebebeb1f;
+    border-left: 6px solid #7380ec;
+    margin: 0;
+    width: 260px;
+}
+.counterOfMessage{
+    padding: 1px 12px;
+    background-color: #ff7782;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.darkMode{
+    border: none;
+    background-color: #fdfdfd1c;
+    box-shadow:0 2rem 3rem rgba(34, 35, 44, 0.192) ;
+    padding: 8px 15px;
+    color: gray;
+    border-radius: 3px;
+    margin: 5px 0 0 50px;
+    cursor: pointer;
+}
+.menuBtn{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff17;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.showMenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.closeMenuBtn{
+    border: none;
+    background-color: #ffffff00;
+    cursor: pointer;
+    display: none;
+    margin: 10px 10px 0 10px;
+}
+@media screen and (max-width: 1770px) {
+    aside{
+        display: none;
+    }
+    .menuBtn{
+        display: block;
+    }  
+}
+@media screen and (min-width: 1770px) {
+    aside{
+        display: block;
+    }
+    .menuBtn{
+        display: none;
+    }  
+}
